@@ -1,0 +1,18 @@
+/**
+ * Contact Card Component
+ */
+
+.ct {
+  text-align: center;
+  padding: 36px 22px;
+  background: linear-gradient(150deg, var(--card), var(--soft));
+  border-radius: var(--radius-lg);
+}
+
+.ct .ttl {
+  margin-bottom: 10px;
+}
+
+.ct .btns {
+  justify-content: center;
+}

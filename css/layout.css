@@ -1,0 +1,74 @@
+/**
+ * Core Layout & Shared Grid System
+ */
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 84px 0;
+}
+
+/* Grids */
+.g {
+  display: grid;
+  gap: 16px;
+}
+
+.g3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Reusable typography helpers */
+h3 {
+  font: 700 17px/1.3 var(--font-heading), sans-serif;
+  margin: 0 0 8px;
+}
+
+.mut {
+  color: var(--mute);
+  font-size: 14px;
+}
+
+/* Bullet list with decorative accent dot */
+ul.pt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+
+ul.pt li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+ul.pt li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bl2);
+  margin-top: 8px;
+  flex-shrink: 0;
+}

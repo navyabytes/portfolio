@@ -1,0 +1,40 @@
+/**
+ * Projects & Metrics Component
+ */
+
+.pj {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pj .chips {
+  margin-top: auto;
+}
+
+/* Metric Pills */
+.pill {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.m {
+  background: var(--soft);
+  border-radius: var(--radius-md);
+  padding: 9px 13px;
+  min-width: 92px;
+}
+
+.m b {
+  display: block;
+  font: 700 18px var(--font-heading), sans-serif;
+  color: var(--lil2);
+  line-height: 1.2;
+}
+
+.m span {
+  font-size: 12px;
+  color: var(--mute);
+}

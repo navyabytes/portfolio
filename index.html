@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Portfolio of Navya Sachdeva - Mathematics &amp; Computing student specializing in Machine Learning, NLP, and Healthcare AI.">
+  <title>Navya Sachdeva | Portfolio</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Inline SVG Icon Sprite Definitions -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+      <symbol id="twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></symbol>
+      <symbol id="linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0zM12 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></symbol>
+      <symbol id="brief" viewBox="0 0 24 24"><path d="M4 7h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zM16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+      <symbol id="chart" viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6"/></symbol>
+      <symbol id="pulse" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+      <symbol id="db" viewBox="0 0 24 24"><path d="M12 2c4.97 0 9 1.34 9 3s-4.03 3-9 3-9-1.34-9-3 4.03-3 9-3zM21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></symbol>
+      <symbol id="term" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></symbol>
+      <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/></symbol>
+      <symbol id="up" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+      <symbol id="menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+      <symbol id="users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="award" viewBox="0 0 24 24"><path d="M12 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12zM8.2 13.9 7 23l5-3 5 3-1.2-9.1"/></symbol>
+      <symbol id="globe" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+      <symbol id="cam" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2zM12 9a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Sticky Header & Navigation Bar -->
+  <header class="hd">
+    <div class="wrap">
+      <a href="#home" class="logo" aria-label="Home">Navya</a>
+      <div class="tools">
+        <nav id="nav" aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#wins">Wins</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="ib" id="mb" aria-label="Toggle menu" aria-expanded="false">
+          <svg class="i"><use href="#menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Social Rail -->
+  <aside class="rail" aria-label="Social links">
+    <a class="soc" href="https://github.com/navyabytes" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><svg class="i"><use href="#github"/></svg></a>
+    <a class="soc" href="https://x.com/navya_bytes" target="_blank" rel="noopener noreferrer" title="Twitter / X" aria-label="Twitter / X"><svg class="i"><use href="#twitter"/></svg></a>
+    <a class="soc" href="mailto:navyasachdeva.creates@gmail.com" title="Email" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
+    <a class="soc" href="https://www.linkedin.com/in/navya040806/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg class="i"><use href="#linkedin"/></svg></a>
+  </aside>
+
+  <!-- Main Content Sections -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="wrap hero">
+        <div>
+          <div class="hi">Hello, I’m</div>
+          <h1 data-split>Navya Sachdeva</h1>
+          <p class="sub rl">Math &amp; Computing student building ML for healthcare and finance.</p>
+          <div class="chips rl">
+            <span class="chip p">Machine Learning</span>
+            <span class="chip p">NLP</span>
+            <span class="chip p">Computer Vision</span>
+          </div>
+          <div class="btns rl">
+            <a class="btn pri" href="#projects">View projects <svg class="i"><use href="#up"/></svg></a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="pv">
+          <span class="blob b1"></span>
+          <span class="blob b2"></span>
+          <label id="ph" class="has" title="Click to change photo">
+            <img id="im" src="assets/images/profilepic.png" alt="Navya Sachdeva">
+            <span class="ph-t"><svg class="i"><use href="#cam"/></svg>Change photo</span>
+            <input type="file" accept="image/*">
+          </label>
+          <div class="fl f1"><svg class="i"><use href="#code"/></svg>LeetCode 1658</div>
+          <div class="fl f2"><svg class="i"><use href="#trophy"/></svg>EliteHack Runner-Up</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="wrap">
+        <div class="lab">get to know me</div>
+        <h2 class="ttl">About</h2>
+        <div class="two">
+          <div class="card rv">
+            <div class="ic"><svg class="i"><use href="#cap"/></svg></div>
+            <h3>Education</h3>
+            <ul class="pt">
+              <li>B.Tech, Mathematics &amp; Computing</li>
+              <li>Jaypee Institute of Information Technology, Noida</li>
+              <li>2024 to present</li>
+              <li>CGPA 7.51</li>
+            </ul>
+          </div>
+          <div class="card rv">
+            <div class="ic v"><svg class="i"><use href="#spark"/></svg></div>
+            <h3>What I do</h3>
+            <ul class="pt">
+              <li>Healthcare AI and clinical data</li>
+              <li>Sentiment-driven stock prediction</li>
+              <li>Clean UI/UX and product pitching</li>
+              <li class="mut" style="align-items:center"><svg class="i"><use href="#pin"/></svg>Noida, India</li>
+            </ul>
+          </div>
+        </div>
+        <div class="g g3" style="margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+          <div class="card stat rv"><b><span class="num" data-to="1658">1658</span></b><span>LeetCode rating</span></div>
+          <div class="card stat rv"><b><span class="num" data-to="300">300</span>+</b><span>Problems solved</span></div>
+          <div class="card stat rv"><b><span class="num" data-to="900">900</span>+</b><span>Teams outperformed</span></div>
+          <div class="card stat rv"><b><span class="num" data-to="91.2" data-d="1">91.2</span>%</b><span>Sepsis ROC-AUC</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="lab">my toolkit</div>
+        <h2 class="ttl">Skills</h2>
+        <div class="g g3">
+          <div class="card rv">
+            <div class="ic"><svg class="i"><use href="#code"/></svg></div>
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="card rv">
+            <div class="ic v"><svg class="i"><use href="#chart"/></svg></div>
+            <h3>ML &amp; Data</h3>
+            <div class="chips">
+              <span class="chip">NumPy</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">XGBoost</span>
+            </div>
+          </div>
+          <div class="card rv">
+            <div class="ic s"><svg class="i"><use href="#spark"/></svg></div>
+            <h3>AI / NLP</h3>
+            <div class="chips">
+              <span class="chip">FinBERT</span>
+              <span class="chip">VADER</span>
+              <span class="chip">NLP</span>
+              <span class="chip">Sentiment Analysis</span>
+              <span class="chip">Feature Engineering</span>
+            </div>
+          </div>
+          <div class="card rv">
+            <div class="ic"><svg class="i"><use href="#eye"/></svg></div>
+            <h3>Computer Vision</h3>
+            <div class="chips">
+              <span class="chip">OpenCV</span>
+              <span class="chip">Image Processing</span>
+            </div>
+          </div>
+          <div class="card rv">
+            <div class="ic v"><svg class="i"><use href="#db"/></svg></div>
+            <h3>Databases</h3>
+            <div class="chips">
+              <span class="chip">MySQL</span>
+              <span class="chip">Oracle</span>
+              <span class="chip">PL/SQL</span>
+            </div>
+          </div>
+          <div class="card rv">
+            <div class="ic s"><svg class="i"><use href="#term"/></svg></div>
+            <h3>Tools</h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Matplotlib</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="lab">where I’ve worked</div>
+        <h2 class="ttl">Experience</h2>
+        <div class="tl">
+          <div class="card rv">
+            <span class="dot"></span>
+            <div class="row">
+              <div>
+                <h3>Industrial Trainee</h3>
+                <div class="mut">Max Healthcare Institute Limited</div>
+              </div>
+              <span class="tag">Jun to Jul 2026</span>
+            </div>
+            <ul class="pt" style="margin-top:14px">
+              <li>EDA and topic clustering on healthcare-user data</li>
+              <li>Patient sentiment, concerns and interaction patterns around AI in healthcare</li>
+              <li>Explored MAX-ACL and automated ICD-11 medical coding</li>
+              <li>Clinical speech-to-text: dictation to reports, medical terms, Indian language variations</li>
+            </ul>
+            <div class="chips" style="margin-top:16px">
+              <span class="chip p">EDA</span>
+              <span class="chip p">Clustering</span>
+              <span class="chip p">ICD-11</span>
+              <span class="chip p">Speech-to-Text</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="lab">things I’ve built</div>
+        <h2 class="ttl">Projects</h2>
+        <div class="g g3">
+          <article class="card pj rv">
+            <div class="ic"><svg class="i"><use href="#chart"/></svg></div>
+            <div>
+              <h3>AI Stock Trading Decision Support</h3>
+              <ul class="pt">
+                <li>6.9K+ news articles scored with FinBERT and VADER</li>
+                <li>20+ technical, volatility, momentum and lagged-sentiment features</li>
+                <li>5 classifiers compared on a chronological split</li>
+                <li>Confidence-based BUY / SELL / HOLD with trend and RSI filters</li>
+              </ul>
+            </div>
+            <div class="pill">
+              <div class="m"><b>4.50×</b><span>vs 1.02× hold</span></div>
+              <div class="m"><b>79.6%</b><span>win rate</span></div>
+              <div class="m"><b>1.6%</b><span>max drawdown</span></div>
+            </div>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">FinBERT</span>
+              <span class="chip">XGBoost</span>
+              <span class="chip">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="card pj rv">
+            <div class="ic v"><svg class="i"><use href="#pulse"/></svg></div>
+            <div>
+              <h3>Sepsis Early Prediction System</h3>
+              <ul class="pt">
+                <li>ICU risk pipeline from longitudinal vitals and labs</li>
+                <li>Temporal stats, trends and missingness features</li>
+                <li>Logistic Regression, Random Forest, Gradient Boosting compared</li>
+                <li>Class weighting and threshold tuning for imbalance</li>
+                <li>Interactive Streamlit risk dashboard</li>
+              </ul>
+            </div>
+            <div class="pill">
+              <div class="m"><b>91.2%</b><span>ROC-AUC</span></div>
+              <div class="m"><b>61.5%</b><span>recall</span></div>
+              <div class="m"><b>~53 ms</b><span>inference</span></div>
+            </div>
+            <div class="chips">
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="card pj rv">
+            <div class="ic s"><svg class="i"><use href="#award"/></svg></div>
+            <div>
+              <h3>KrishiKonnect</h3>
+              <div class="mut" style="margin-bottom:10px">AI farming assistance platform</div>
+              <ul class="pt">
+                <li>UI/UX across farmer dashboard and government schemes</li>
+                <li>Led the main project pitch to judges</li>
+                <li>Testing and product vision</li>
+              </ul>
+            </div>
+            <div class="pill">
+              <div class="m"><b>Runner-Up</b><span>EliteHack 2026</span></div>
+            </div>
+            <div class="chips">
+              <span class="chip">Next.js</span>
+              <span class="chip">UI/UX</span>
+              <span class="chip">Testing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="wins">
+      <div class="wrap">
+        <div class="lab">little victories</div>
+        <h2 class="ttl">Achievements</h2>
+        <div class="g g3">
+          <div class="card rv">
+            <div class="ic"><svg class="i"><use href="#trophy"/></svg></div>
+            <h3>Elite Hack 2026</h3>
+            <p class="mut" style="margin:0">Runner-Up among 900+ teams, 7k+ participants</p>
+          </div>
+          <div class="card rv">
+            <div class="ic v"><svg class="i"><use href="#award"/></svg></div>
+            <h3>Balance of Power</h3>
+            <p class="mut" style="margin:0">Runner-Up, Deltech Society competition</p>
+          </div>
+          <div class="card rv">
+            <div class="ic s"><svg class="i"><use href="#pulse"/></svg></div>
+            <h3>Healthcare AI Hackathon</h3>
+            <p class="mut" style="margin:0">Top 5 of 30+ teams with Sepsis Sentinel</p>
+          </div>
+          <div class="card rv">
+            <div class="ic"><svg class="i"><use href="#code"/></svg></div>
+            <h3>LeetCode</h3>
+            <p class="mut" style="margin:0">1658 rating, 300+ problems solved</p>
+          </div>
+          <div class="card rv">
+            <div class="ic v"><svg class="i"><use href="#users"/></svg></div>
+            <h3>Joust’ 25</h3>
+            <p class="mut" style="margin:0">Organizing committee: planning and execution</p>
+          </div>
+          <div class="card rv">
+            <div class="ic s"><svg class="i"><use href="#globe"/></svg></div>
+            <h3>UNHRC, Joust’ 24</h3>
+            <p class="mut" style="margin:0">International relations simulation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="card ct rv">
+          <div class="lab">say hello</div>
+          <h2 class="ttl">Let’s work together</h2>
+          <p class="mut" style="margin:0 auto 6px;max-width:420px">Open to internships and collaborations in ML and data.</p>
+          <div class="mut"><svg class="i" style="vertical-align:-3px"><use href="#pin"/></svg> Noida, India</div>
+          <div class="btns">
+            <a class="btn pri" href="mailto:navyasachdeva.creates@gmail.com" aria-label="Email"><svg class="i"><use href="#mail"/></svg>Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/navya040806/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="i"><use href="#linkedin"/></svg>LinkedIn</a>
+            <a class="btn" href="https://github.com/navyabytes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="i"><use href="#github"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- External Animation Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main ES Module -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

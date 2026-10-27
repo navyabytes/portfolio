@@ -1,0 +1,67 @@
+/**
+ * Navbar & Header Component
+ */
+
+.hd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--nav);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.hd .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.logo {
+  font: 700 30px var(--font-display), cursive;
+  color: var(--lil2);
+  transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+#nav {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+#nav a {
+  font: 600 14px var(--font-heading), sans-serif;
+  padding: 8px 13px;
+  border-radius: var(--radius-full);
+  transition: background var(--transition-fast), color var(--transition-fast);
+  color: var(--ink);
+}
+
+#nav a:hover {
+  background: var(--soft);
+  color: var(--lil2);
+}
+
+#nav a.active {
+  background: var(--soft);
+  color: var(--lil2);
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#mb {
+  display: none;
+}

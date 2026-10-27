@@ -1,0 +1,60 @@
+/**
+ * Reset & Base Styles
+ * Establishes consistent baseline layout, typography, focus outlines, and SVG icon defaults.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 74px);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 10% -5%, rgba(185, 166, 227, 0.22), transparent 50%),
+              radial-gradient(ellipse at 100% 10%, rgba(243, 205, 223, 0.22), transparent 45%),
+              var(--bg);
+  color: var(--ink);
+  font: 500 16px/1.6 var(--font-body), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Safe area bar on supported mobile devices */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--nav);
+  z-index: 49;
+}
+
+/* Global SVG icon styling */
+.i {
+  width: 1.15em;
+  height: 1.15em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Accessible links & focus outlines */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+label:focus-within {
+  outline: 2px solid var(--lil2);
+  outline-offset: 3px;
+}

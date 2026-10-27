@@ -1,0 +1,85 @@
+/**
+ * Responsive Breakpoints & Viewport Adaptations
+ */
+
+/* Tablet & Intermediate Viewports */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sub {
+    margin-inline: auto;
+  }
+
+  .hero .chips,
+  .btns {
+    justify-content: center;
+  }
+
+  .pv {
+    order: -1;
+    width: min(260px, 66vw);
+  }
+
+  .f1 {
+    left: -46px;
+  }
+
+  .f2 {
+    right: -40px;
+  }
+}
+
+/* Mobile Viewports */
+@media (max-width: 700px) {
+  section {
+    padding: 64px 0;
+  }
+
+  .two {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding-bottom: 84px;
+  }
+
+  #mb {
+    display: grid;
+  }
+
+  #nav {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    right: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: var(--sh);
+    display: none;
+  }
+
+  #nav.open {
+    display: flex;
+  }
+
+  /* Bottom dock positioning on mobile */
+  .rail {
+    inset: auto 0 calc(env(safe-area-inset-bottom, 0px) + 10px) 0;
+    margin-inline: auto;
+    width: fit-content;
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .f1,
+  .f2 {
+    display: none;
+  }
+}

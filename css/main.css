@@ -1,0 +1,28 @@
+/**
+ * Main Stylesheet
+ * Navya Sachdeva Portfolio - Modular CSS Architecture
+ * Light Mode Only
+ */
+
+/* 1. Design Tokens & Variables */
+@import 'variables.css';
+
+/* 2. Base & Reset */
+@import 'reset.css';
+
+/* 3. Global Layout & Structure */
+@import 'layout.css';
+
+/* 4. Component Styles */
+@import 'components/navbar.css';
+@import 'components/buttons.css';
+@import 'components/hero.css';
+@import 'components/about.css';
+@import 'components/skills.css';
+@import 'components/experience.css';
+@import 'components/projects.css';
+@import 'components/contact.css';
+
+/* 5. Utilities & Responsive */
+@import 'utilities/animations.css';
+@import 'utilities/responsive.css';

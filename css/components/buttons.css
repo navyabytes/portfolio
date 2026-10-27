@@ -1,0 +1,146 @@
+/**
+ * Button & Interactive Trigger Styles
+ * Solid colors only - no linear or radial gradients.
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: 600 14px var(--font-heading), sans-serif;
+  padding: 13px 24px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--line);
+  background: var(--card);
+  cursor: pointer;
+  color: var(--ink);
+  transition: transform var(--transition-fast),
+              background var(--transition-fast),
+              border-color var(--transition-fast),
+              box-shadow var(--transition-fast),
+              color var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: var(--soft);
+  border-color: var(--lil);
+  box-shadow: var(--sh-sm);
+  color: var(--ink);
+}
+
+.btn:active {
+  transform: translateY(0);
+  background: var(--line);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--lil2);
+  outline-offset: 3px;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Primary Button - Clean Solid Brand Color (No Gradients) */
+.btn.pri {
+  background: var(--lil2);
+  color: #ffffff;
+  border: 1px solid var(--lil2);
+  box-shadow: var(--sh-btn);
+}
+
+.btn.pri:hover {
+  background: var(--lil2-hover);
+  border-color: var(--lil2-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--sh-btn-hover);
+}
+
+.btn.pri:active {
+  background: var(--lil2-active);
+  border-color: var(--lil2-active);
+  transform: translateY(0);
+}
+
+/* Circular Icon Button (Menu, Tools) */
+.ib {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform var(--transition-fast),
+              background var(--transition-fast),
+              border-color var(--transition-fast),
+              color var(--transition-fast);
+}
+
+.ib:hover {
+  background: var(--soft);
+  color: var(--lil2);
+  border-color: var(--lil);
+}
+
+.ib:active {
+  background: var(--line);
+}
+
+/* Social Rail & Buttons */
+.rail {
+  position: fixed;
+  right: 14px;
+  inset-block: 0;
+  margin-block: auto;
+  height: fit-content;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background: var(--nav);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-full);
+}
+
+.soc {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 19px;
+  transition: background var(--transition-fast),
+              color var(--transition-fast),
+              transform var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+.soc:hover {
+  background: var(--lil2);
+  color: #ffffff;
+  border-color: var(--lil2);
+  transform: scale(1.08);
+}
+
+.soc:active {
+  background: var(--lil2-active);
+}

@@ -1,0 +1,33 @@
+/**
+ * Skills & Tag Chips Component
+ */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font: 600 13px var(--font-heading), sans-serif;
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.chip:hover {
+  border-color: var(--lil);
+}
+
+/* Primary/Pink Variant */
+.chip.p {
+  background: var(--bl);
+  border-color: transparent;
+}
+
+.chip.p:hover {
+  background: var(--bl2);
+}
